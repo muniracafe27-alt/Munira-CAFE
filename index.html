@@ -13,501 +13,73 @@
         }
 
         body {
-            background-color: #fcf9f2;
-            color: #1a331e;
-        }
-
-        /* Top Header / Banner */
-        header {
-            background: linear-gradient(rgba(0, 50, 25, 0.9), rgba(0, 50, 25, 0.95)), url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1200') no-repeat center/cover;
+            background-color: #062312; /* Matching dark green background */
             color: #fff;
             text-align: center;
-            padding: 30px 15px;
-            border-bottom: 5px solid #c9a054;
         }
 
-        .logo-area h1 {
-            font-size: 2.2rem;
-            color: #c9a054;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-        }
-
-        .logo-area p {
-            font-size: 1rem;
-            letter-spacing: 1px;
-            color: #f0e6d2;
-        }
-
-        .tagline {
-            display: inline-block;
-            margin-top: 12px;
-            padding: 4px 12px;
-            border: 1px solid #c9a054;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            color: #fff;
-            background: rgba(201, 160, 84, 0.1);
-        }
-
-        /* Container Setup */
         .container {
-            max-width: 800px;
-            margin: 20px auto 80px auto;
-            padding: 0 12px;
+            max-width: 600px;
+            margin: 0 auto 90px auto;
+            padding: 10px;
         }
 
-        .category-block {
-            background: #fff;
+        /* Menu Card Image Styling */
+        .menu-card-img {
+            width: 100%;
+            height: auto;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin-bottom: 25px;
-            overflow: hidden;
-            border: 1px solid #e1ebe2;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            display: block;
         }
 
-        .category-title {
-            background: #004d2b;
-            color: #fff;
-            padding: 12px 15px;
-            font-size: 1.15rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 3px solid #c9a054;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* Modern Flexbox Menu Item Row for Mobile */
-        .menu-items {
-            padding: 5px 0;
-        }
-
-        .menu-item {
-            display: flex;
-            align-items: center;
-            padding: 12px 15px;
-            border-bottom: 1px dashed #e1ebe2;
-            gap: 12px;
-        }
-
-        .menu-item:last-child {
-            border-bottom: none;
-        }
-
-        .item-img {
-            width: 60px;
-            height: 60px;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 1px solid #c9a054;
-            background-color: #f5f5f5;
-            flex-shrink: 0;
-        }
-
-        .item-details {
-            flex-grow: 1;
-            min-width: 0;
-        }
-
-        .item-name {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #004d2b;
-            word-wrap: break-word;
-        }
-
-        .item-price-action {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            flex-shrink: 0;
-        }
-
-        .price-badge {
-            font-weight: bold;
-            color: #004d2b;
-            font-size: 1rem;
-            white-space: nowrap;
-        }
-
-        /* Buttons */
-        .btn-add {
-            background-color: #c9a054;
-            color: #fff;
-            border: none;
-            padding: 6px 12px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background 0.2s;
-            white-space: nowrap;
-        }
-
-        .btn-add:hover {
-            background-color: #004d2b;
-        }
-
-        /* Floating Cart Sticky Bar at Bottom */
+        /* Floating Order Button at Bottom */
         .cart-sticky-bar {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
             background: #004d2b;
-            color: #fff;
-            padding: 12px 15px;
-            box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+            padding: 15px;
+            box-shadow: 0 -4px 15px rgba(0,0,0,0.4);
             border-top: 3px solid #c9a054;
             z-index: 1000;
-            display: none;
-        }
-
-        .cart-bar-container {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cart-info {
-            font-size: 1rem;
-            font-weight: 600;
         }
 
         .btn-whatsapp {
             background-color: #25D366;
             color: white;
             border: none;
-            padding: 8px 16px;
-            font-size: 0.9rem;
+            padding: 12px 30px;
+            font-size: 1.1rem;
             font-weight: bold;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 90%;
+            max-width: 400px;
         }
 
-        /* Delivery Badge */
-        .delivery-info {
-            background: #004d2b;
-            color: #fff;
-            text-align: center;
-            padding: 12px;
-            margin-top: 15px;
-            font-size: 1rem;
-            border-radius: 6px;
-            border: 1px solid #c9a054;
-            line-height: 1.4;
-        }
-
-        .delivery-info span {
-            color: #c9a054;
-            font-weight: bold;
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-area">
-            <h1>Munira Cafe</h1>
-            <p>Munira Market, Naife Deira, Dubai</p>
-            <div class="tagline">Fresh • Tasty • Affordable</div>
-        </div>
-    </header>
-
     <div class="container">
-
-        <!-- SNACKS -->
-        <div class="category-block">
-            <div class="category-title">
-                <span>Snacks</span>
-                <span>100% Veg</span>
-            </div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Samosa">
-                    <div class="item-details"><div class="item-name">Samosa (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Samosa (1 pc)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Kachori">
-                    <div class="item-details"><div class="item-name">Kachori (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Kachori (1 pc)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?w=150&auto=format&fit=crop&q=60" alt="Bread Pakoda">
-                    <div class="item-details"><div class="item-name">Bread Pakoda (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Bread Pakoda (1 pc)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=150&auto=format&fit=crop&q=60" alt="Mirchi Pakoda">
-                    <div class="item-details"><div class="item-name">Chilli Pakoda (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Chilli Pakoda (1 pc)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?w=150&auto=format&fit=crop&q=60" alt="Namak Para">
-                    <div class="item-details"><div class="item-name">Namak Para</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Namak Para', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?w=150&auto=format&fit=crop&q=60" alt="Maida Mathri">
-                    <div class="item-details"><div class="item-name">Maida Mathri (2 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Maida Mathri (2 pc)', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Pakoda">
-                    <div class="item-details"><div class="item-name">Rajasthani Pakoda</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Rajasthani Pakoda', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=150&auto=format&fit=crop&q=60" alt="Paratha">
-                    <div class="item-details"><div class="item-name">Paratha (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Paratha (1 pc)', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=150&auto=format&fit=crop&q=60" alt="Boiled Egg">
-                    <div class="item-details"><div class="item-name">Boiled Egg (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Boiled Egg (1 pc)', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150&auto=format&fit=crop&q=60" alt="Veg Burger">
-                    <div class="item-details"><div class="item-name">Veg Burger</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Veg Burger', 5)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CHAATS -->
-        <div class="category-block">
-            <div class="category-title">Chaats</div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Papdi Chat">
-                    <div class="item-details"><div class="item-name">Papdi Chat</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Papdi Chat', 5)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Samosa Chat">
-                    <div class="item-details"><div class="item-name">Samosa Chat</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Samosa Chat', 5)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Kachori Chat">
-                    <div class="item-details"><div class="item-name">Kachori Chat</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Kachori Chat', 5)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=150&auto=format&fit=crop&q=60" alt="Sabji Puri">
-                    <div class="item-details"><div class="item-name">Sabji Puri (3 pcs)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Sabji Puri (3 pcs)', 5)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PASTA & NOODLES -->
-        <div class="category-block">
-            <div class="category-title">Pasta & Noodles</div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=150&auto=format&fit=crop&q=60" alt="Pasta">
-                    <div class="item-details"><div class="item-name">Pasta (Small)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Pasta (Small)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=150&auto=format&fit=crop&q=60" alt="Pasta">
-                    <div class="item-details"><div class="item-name">Pasta (Big)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">4 AED</span>
-                        <button class="btn-add" onclick="addToCart('Pasta (Big)', 4)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=150&auto=format&fit=crop&q=60" alt="Noodles">
-                    <div class="item-details"><div class="item-name">Noodles (Small)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Noodles (Small)', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=150&auto=format&fit=crop&q=60" alt="Noodles">
-                    <div class="item-details"><div class="item-name">Noodles (Big)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">4 AED</span>
-                        <button class="btn-add" onclick="addToCart('Noodles (Big)', 4)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SWEETS -->
-        <div class="category-block">
-            <div class="category-title">Sweets</div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=150&auto=format&fit=crop&q=60" alt="Petha">
-                    <div class="item-details"><div class="item-name">Rajasthani Petha (1 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Rajasthani Petha (1 pc)', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=150&auto=format&fit=crop&q=60" alt="Jalebi">
-                    <div class="item-details"><div class="item-name">Rajasthani Jalebi (4 pc)</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Rajasthani Jalebi (4 pc)', 1)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- DRINKS -->
-        <div class="category-block">
-            <div class="category-title">Drinks</div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?w=150&auto=format&fit=crop&q=60" alt="Lassi">
-                    <div class="item-details"><div class="item-name">Refreshing Lassi</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Refreshing Lassi', 2)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=150&auto=format&fit=crop&q=60" alt="Chai">
-                    <div class="item-details"><div class="item-name">Masala Chai</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Masala Chai', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <img class="item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=150&auto=format&fit=crop&q=60" alt="Coffee">
-                    <div class="item-details"><div class="item-name">Coffee</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Coffee', 1)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="delivery-info">
-            🛵 <span>FREE HOME DELIVERY</span> • FAST • FRESH • RELIABLE<br>
-            Order on WhatsApp: <strong>56 347 0940</strong>
-        </div>
-
+        <!-- Aapki menu card image yahan load hogi -->
+        <img class="menu-card-img" src="menu.png" alt="Munira Cafe Menu">
     </div>
 
-    <!-- Bottom Sticky Cart -->
-    <div id="cartBar" class="cart-sticky-bar">
-        <div class="cart-bar-container">
-            <div id="cartInfo" class="cart-info">Items: 0 | Total: 0 AED</div>
-            <button class="btn-whatsapp" onclick="sendWhatsAppOrder()">Order 💬</button>
-        </div>
+    <!-- Bottom Sticky Order Button -->
+    <div class="cart-sticky-bar">
+        <a href="https://wa.me/971563470940?text=Hello%20Munira%20Cafe%2C%20I%20want%20to%20place%20an%20order%21" target="_blank" class="btn-whatsapp">
+            Order on WhatsApp 💬
+        </a>
     </div>
 
-    <script>
-        let cart = {};
-
-        function addToCart(name, price) {
-            if (cart[name]) {
-                cart[name].qty += 1;
-            } else {
-                cart[name] = { price: price, qty: 1 };
-            }
-            updateCartBar();
-        }
-
-        function updateCartBar() {
-            let totalItems = 0;
-            let totalPrice = 0;
-            
-            for (let item in cart) {
-                totalItems += cart[item].qty;
-                totalPrice += (cart[item].price * cart[item].qty);
-            }
-            
-            const cartBar = document.getElementById('cartBar');
-            const cartInfo = document.getElementById('cartInfo');
-            
-            if (totalItems > 0) {
-                cartBar.style.display = 'block';
-                cartInfo.innerText = `${totalItems} Items | ${totalPrice} AED`;
-            } else {
-                cartBar.style.display = 'none';
-            }
-        }
-
-        function sendWhatsAppOrder() {
-            let phoneNumber = "971563470940"; 
-            let message = "*New Order from Munira Cafe Website*\n---------------------------\n";
-            let totalPrice = 0;
-
-            for (let item in cart) {
-                let itemTotal = cart[item].price * cart[item].qty;
-                message += `• ${item} x ${cart[item].qty} = ${itemTotal} AED\n`;
-                totalPrice += itemTotal;
-            }
-
-            message += `---------------------------\n*Total Amount:* ${totalPrice} AED\n\nPlease confirm my order! 🛵`;
-            
-            let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-            window.open(url, '_blank');
-        }
-    </script>
 </body>
 </html>

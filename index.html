@@ -22,12 +22,12 @@
             background: linear-gradient(rgba(0, 50, 25, 0.9), rgba(0, 50, 25, 0.95)), url('https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1200') no-repeat center/cover;
             color: #fff;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 15px;
             border-bottom: 5px solid #c9a054;
         }
 
         .logo-area h1 {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             color: #c9a054;
             letter-spacing: 2px;
             margin-bottom: 5px;
@@ -35,34 +35,34 @@
         }
 
         .logo-area p {
-            font-size: 1.1rem;
+            font-size: 1rem;
             letter-spacing: 1px;
             color: #f0e6d2;
         }
 
         .tagline {
             display: inline-block;
-            margin-top: 15px;
-            padding: 5px 15px;
+            margin-top: 12px;
+            padding: 4px 12px;
             border: 1px solid #c9a054;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
             color: #fff;
             background: rgba(201, 160, 84, 0.1);
         }
 
-        /* Container & Grid Setup */
+        /* Container Setup */
         .container {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 0 15px;
+            max-width: 800px;
+            margin: 20px auto 80px auto;
+            padding: 0 12px;
         }
 
         .category-block {
             background: #fff;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 35px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
             overflow: hidden;
             border: 1px solid #e1ebe2;
         }
@@ -70,8 +70,8 @@
         .category-title {
             background: #004d2b;
             color: #fff;
-            padding: 15px 20px;
-            font-size: 1.3rem;
+            padding: 12px 15px;
+            font-size: 1.15rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             border-bottom: 3px solid #c9a054;
@@ -80,26 +80,21 @@
             align-items: center;
         }
 
-        /* Menu Item Row */
+        /* Modern Flexbox Menu Item Row for Mobile */
         .menu-items {
-            padding: 10px 0;
+            padding: 5px 0;
         }
 
         .menu-item {
-            display: table;
-            width: 100%;
-            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
             border-bottom: 1px dashed #e1ebe2;
+            gap: 12px;
         }
 
         .menu-item:last-child {
             border-bottom: none;
-        }
-
-        .item-img-cell {
-            display: table-cell;
-            width: 70px;
-            vertical-align: middle;
         }
 
         .item-img {
@@ -108,33 +103,34 @@
             object-fit: cover;
             border-radius: 6px;
             border: 1px solid #c9a054;
+            background-color: #f5f5f5;
+            flex-shrink: 0;
         }
 
         .item-details {
-            display: table-cell;
-            vertical-align: middle;
-            padding-left: 15px;
+            flex-grow: 1;
+            min-width: 0;
         }
 
         .item-name {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: #004d2b;
+            word-wrap: break-word;
         }
 
         .item-price-action {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: right;
-            width: 180px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
         }
 
         .price-badge {
             font-weight: bold;
             color: #004d2b;
-            font-size: 1.1rem;
-            margin-right: 15px;
-            display: inline-block;
+            font-size: 1rem;
+            white-space: nowrap;
         }
 
         /* Buttons */
@@ -142,12 +138,13 @@
             background-color: #c9a054;
             color: #fff;
             border: none;
-            padding: 8px 14px;
-            font-size: 0.9rem;
+            padding: 6px 12px;
+            font-size: 0.85rem;
             font-weight: bold;
             border-radius: 4px;
             cursor: pointer;
             transition: background 0.2s;
+            white-space: nowrap;
         }
 
         .btn-add:hover {
@@ -162,38 +159,32 @@
             right: 0;
             background: #004d2b;
             color: #fff;
-            padding: 15px 20px;
-            box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+            padding: 12px 15px;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
             border-top: 3px solid #c9a054;
             z-index: 1000;
             display: none;
         }
 
         .cart-bar-container {
-            max-width: 1100px;
+            max-width: 800px;
             margin: 0 auto;
-            display: table;
-            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .cart-info {
-            display: table-cell;
-            vertical-align: middle;
-            font-size: 1.1rem;
-        }
-
-        .cart-btn-cell {
-            display: table-cell;
-            text-align: right;
-            vertical-align: middle;
+            font-size: 1rem;
+            font-weight: 600;
         }
 
         .btn-whatsapp {
             background-color: #25D366;
             color: white;
             border: none;
-            padding: 10px 20px;
-            font-size: 1rem;
+            padding: 8px 16px;
+            font-size: 0.9rem;
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
@@ -201,20 +192,17 @@
             display: inline-block;
         }
 
-        .btn-whatsapp:hover {
-            background-color: #128C7E;
-        }
-
         /* Delivery Badge */
         .delivery-info {
             background: #004d2b;
             color: #fff;
             text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 1.1rem;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 1rem;
             border-radius: 6px;
             border: 1px solid #c9a054;
+            line-height: 1.4;
         }
 
         .delivery-info span {
@@ -243,39 +231,39 @@
             </div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=150&q=80" alt="Samosa"></div>
-                    <div class="item-details"><div class="item-name">Samosa (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Samosa">
+                    <div class="item-details"><div class="item-name">Samosa (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
                         <button class="btn-add" onclick="addToCart('Samosa (1 pc)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=150&q=80" alt="Kachori"></div>
-                    <div class="item-details"><div class="item-name">Kachori (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Kachori">
+                    <div class="item-details"><div class="item-name">Kachori (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
                         <button class="btn-add" onclick="addToCart('Kachori (1 pc)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=150&q=80" alt="Bread Pakoda"></div>
-                    <div class="item-details"><div class="item-name">Bread Pakoda (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?w=150&auto=format&fit=crop&q=60" alt="Bread Pakoda">
+                    <div class="item-details"><div class="item-name">Bread Pakoda (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
                         <button class="btn-add" onclick="addToCart('Bread Pakoda (1 pc)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=150&q=80" alt="Green Chilli Pakoda"></div>
-                    <div class="item-details"><div class="item-name">Green Chilli Pakoda (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=150&auto=format&fit=crop&q=60" alt="Mirchi Pakoda">
+                    <div class="item-details"><div class="item-name">Chilli Pakoda (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Green Chilli Pakoda (1 pc)', 2)">Add +</button>
+                        <button class="btn-add" onclick="addToCart('Chilli Pakoda (1 pc)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?auto=format&fit=crop&w=150&q=80" alt="Namak Para"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?w=150&auto=format&fit=crop&q=60" alt="Namak Para">
                     <div class="item-details"><div class="item-name">Namak Para</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
@@ -283,43 +271,43 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?auto=format&fit=crop&w=150&q=80" alt="Maida Mathri"></div>
-                    <div class="item-details"><div class="item-name">Maida Mathri (2 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1605666804774-7cf8885b5a2a?w=150&auto=format&fit=crop&q=60" alt="Maida Mathri">
+                    <div class="item-details"><div class="item-name">Maida Mathri (2 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Maida Mathri (2 pc)', 1)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=150&q=80" alt="Rajasthani Pakoda"></div>
-                    <div class="item-details"><div class="item-name">Rajasthani Pakoda (5 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Pakoda">
+                    <div class="item-details"><div class="item-name">Rajasthani Pakoda</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Rajasthani Pakoda (5 pc)', 1)">Add +</button>
+                        <button class="btn-add" onclick="addToCart('Rajasthani Pakoda', 1)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=150&q=80" alt="Paratha"></div>
-                    <div class="item-details"><div class="item-name">Paratha (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=150&auto=format&fit=crop&q=60" alt="Paratha">
+                    <div class="item-details"><div class="item-name">Paratha (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Paratha (1 pc)', 1)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=150&q=80" alt="Boiled Egg"></div>
-                    <div class="item-details"><div class="item-name">Boiled Egg (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=150&auto=format&fit=crop&q=60" alt="Boiled Egg">
+                    <div class="item-details"><div class="item-name">Boiled Egg (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Boiled Egg (1 pc)', 1)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=150&q=80" alt="Veg Burger"></div>
-                    <div class="item-details"><div class="item-name">Veg Burger (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=150&auto=format&fit=crop&q=60" alt="Veg Burger">
+                    <div class="item-details"><div class="item-name">Veg Burger</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Veg Burger (1 pc)', 5)">Add +</button>
+                        <button class="btn-add" onclick="addToCart('Veg Burger', 5)">Add +</button>
                     </div>
                 </div>
             </div>
@@ -330,15 +318,15 @@
             <div class="category-title">Chaats</div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=150&q=80" alt="Papti Chat"></div>
-                    <div class="item-details"><div class="item-name">Papti Chat</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Papdi Chat">
+                    <div class="item-details"><div class="item-name">Papdi Chat</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">5 AED</span>
-                        <button class="btn-add" onclick="addToCart('Papti Chat', 5)">Add +</button>
+                        <button class="btn-add" onclick="addToCart('Papdi Chat', 5)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=150&q=80" alt="Samosa Chat"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=150&auto=format&fit=crop&q=60" alt="Samosa Chat">
                     <div class="item-details"><div class="item-name">Samosa Chat</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">5 AED</span>
@@ -346,7 +334,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=150&q=80" alt="Kachori Chat"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=150&auto=format&fit=crop&q=60" alt="Kachori Chat">
                     <div class="item-details"><div class="item-name">Kachori Chat</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">5 AED</span>
@@ -354,8 +342,8 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=150&q=80" alt="Sabji Puri"></div>
-                    <div class="item-details"><div class="item-name">Sabji Puri (3 piece puri)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=150&auto=format&fit=crop&q=60" alt="Sabji Puri">
+                    <div class="item-details"><div class="item-name">Sabji Puri (3 pcs)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">5 AED</span>
                         <button class="btn-add" onclick="addToCart('Sabji Puri (3 pcs)', 5)">Add +</button>
@@ -369,32 +357,32 @@
             <div class="category-title">Pasta & Noodles</div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=150&q=80" alt="Pasta Small"></div>
-                    <div class="item-details"><div class="item-name">Pasta (Small Quantity)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=150&auto=format&fit=crop&q=60" alt="Pasta">
+                    <div class="item-details"><div class="item-name">Pasta (Small)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
                         <button class="btn-add" onclick="addToCart('Pasta (Small)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?auto=format&fit=crop&w=150&q=80" alt="Pasta Big"></div>
-                    <div class="item-details"><div class="item-name">Pasta (Big Quantity)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=150&auto=format&fit=crop&q=60" alt="Pasta">
+                    <div class="item-details"><div class="item-name">Pasta (Big)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">4 AED</span>
                         <button class="btn-add" onclick="addToCart('Pasta (Big)', 4)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=150&q=80" alt="Noodles Small"></div>
-                    <div class="item-details"><div class="item-name">Noodles (Small Quantity)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=150&auto=format&fit=crop&q=60" alt="Noodles">
+                    <div class="item-details"><div class="item-name">Noodles (Small)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
                         <button class="btn-add" onclick="addToCart('Noodles (Small)', 2)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=150&q=80" alt="Noodles Big"></div>
-                    <div class="item-details"><div class="item-name">Noodles (Big Quantity)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=150&auto=format&fit=crop&q=60" alt="Noodles">
+                    <div class="item-details"><div class="item-name">Noodles (Big)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">4 AED</span>
                         <button class="btn-add" onclick="addToCart('Noodles (Big)', 4)">Add +</button>
@@ -408,16 +396,16 @@
             <div class="category-title">Sweets</div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=150&q=80" alt="Rajasthani Petha"></div>
-                    <div class="item-details"><div class="item-name">Rajasthani Petha (1 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=150&auto=format&fit=crop&q=60" alt="Petha">
+                    <div class="item-details"><div class="item-name">Rajasthani Petha (1 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Rajasthani Petha (1 pc)', 1)">Add +</button>
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=150&q=80" alt="Rajasthani Jalebi"></div>
-                    <div class="item-details"><div class="item-name">Rajasthani Jalebi (4 piece)</div></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=150&auto=format&fit=crop&q=60" alt="Jalebi">
+                    <div class="item-details"><div class="item-name">Rajasthani Jalebi (4 pc)</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Rajasthani Jalebi (4 pc)', 1)">Add +</button>
@@ -426,12 +414,12 @@
             </div>
         </div>
 
-        <!-- DRINKS (COLD) -->
+        <!-- DRINKS -->
         <div class="category-block">
-            <div class="category-title">Drinks (Cold)</div>
+            <div class="category-title">Drinks</div>
             <div class="menu-items">
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?auto=format&fit=crop&w=150&q=80" alt="Refreshing Lassi"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1553456558-aff63285bdd1?w=150&auto=format&fit=crop&q=60" alt="Lassi">
                     <div class="item-details"><div class="item-name">Refreshing Lassi</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">2 AED</span>
@@ -439,22 +427,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=150&q=80" alt="Lemon Juice"></div>
-                    <div class="item-details"><div class="item-name">Lemon Juice</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">2 AED</span>
-                        <button class="btn-add" onclick="addToCart('Lemon Juice', 2)">Add +</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- DRINKS (HOT) -->
-        <div class="category-block">
-            <div class="category-title">Drinks (Hot)</div>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=150&q=80" alt="Masala Chai"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=150&auto=format&fit=crop&q=60" alt="Chai">
                     <div class="item-details"><div class="item-name">Masala Chai</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
@@ -462,35 +435,11 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=150&q=80" alt="Green Tea"></div>
-                    <div class="item-details"><div class="item-name">Green Tea</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Green Tea', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=150&q=80" alt="Coffee"></div>
+                    <img class="item-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=150&auto=format&fit=crop&q=60" alt="Coffee">
                     <div class="item-details"><div class="item-name">Coffee</div></div>
                     <div class="item-price-action">
                         <span class="price-badge">1 AED</span>
                         <button class="btn-add" onclick="addToCart('Coffee', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=150&q=80" alt="Black Coffee"></div>
-                    <div class="item-details"><div class="item-name">Black Coffee</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Black Coffee', 1)">Add +</button>
-                    </div>
-                </div>
-                <div class="menu-item">
-                    <div class="item-img-cell"><img class="item-img" src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=150&q=80" alt="Black Tea"></div>
-                    <div class="item-details"><div class="item-name">Black Tea</div></div>
-                    <div class="item-price-action">
-                        <span class="price-badge">1 AED</span>
-                        <button class="btn-add" onclick="addToCart('Black Tea', 1)">Add +</button>
                     </div>
                 </div>
             </div>
@@ -507,9 +456,7 @@
     <div id="cartBar" class="cart-sticky-bar">
         <div class="cart-bar-container">
             <div id="cartInfo" class="cart-info">Items: 0 | Total: 0 AED</div>
-            <div class="cart-btn-cell">
-                <button class="btn-whatsapp" onclick="sendWhatsAppOrder()">Order on WhatsApp 💬</button>
-            </div>
+            <button class="btn-whatsapp" onclick="sendWhatsAppOrder()">Order 💬</button>
         </div>
     </div>
 
@@ -539,7 +486,7 @@
             
             if (totalItems > 0) {
                 cartBar.style.display = 'block';
-                cartInfo.innerText = `Items: ${totalItems} | Total: ${totalPrice} AED`;
+                cartInfo.innerText = `${totalItems} Items | ${totalPrice} AED`;
             } else {
                 cartBar.style.display = 'none';
             }
